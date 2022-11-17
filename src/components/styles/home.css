@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+/* homepage */
+.home {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 100px;
+    padding: 20px;
+    color: #fff;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.heading p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#pumped {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #ff0000;
+}
+
+#pumped:hover {
+    color: var(--primary);
+    font-size: 380%;
+}
+
+.card-title {
+    color: #000;
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.workouts {
+    z-index: 1;
+}
+
+.workout-details {
+    background: #fff;
+    opacity: 0.8;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.workout-details h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: var(--primary);
+}
+
+.workout-details p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #000;
+}
+
+.workout-details span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: #f1f1f1;
+    padding: 6px;
+    border-radius: 50%;
+    color: #333;
+}
+
+/* Video Background */
+.home-video-holder {
+    position: relative;
+    background-color: black;
+    height: calc(100vh - 72px);
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.home-video-holder video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.home-video-content {
+    position: relative;
+    z-index: 15;
+}
+
+.home-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+}

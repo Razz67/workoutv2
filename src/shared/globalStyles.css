@@ -1,0 +1,8 @@
+/* Screen */
+.screen-container {
+    width: calc(100% - 100px);
+    height: 100%;
+    background-color: #092350;
+    border-radius: 30px;
+    display: flex;
+}
