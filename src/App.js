@@ -50,8 +50,6 @@ function App() {
 							path="/music/*"
 							element={user ? <MusicHome /> : <Navigate to="/login" />}
 						/>
-
-						
 					</Routes>
 				</div>
 			</Router>
